@@ -12,7 +12,8 @@ To perform initial exploration of Sales Data and use pivot tables to summarize t
 To calculate average sales per product and total revenue by region.
 
 ### FORMULAR USED
-Average Sales =Total sales/unit sold
+---
+Average Sales = Total Sales / Units Sold
 
 ### TOOLS AND METHOD USED
 ---
