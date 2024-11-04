@@ -23,5 +23,15 @@ Average Sales = Total Sales / Units Sold
 - Data Visualization: Bar chart were created in excel to visually represent key insights.
 
 ### VISUAL ANALYSIS
+### Total Sales Per Product, Region
+
 ![Screenshot 2024-11-03 205804](https://github.com/user-attachments/assets/abbd5cfd-68e1-4637-b7e9-12ac996e7955)
+
+### Bar Chart
 ![Screenshot 2024-11-03 205852](https://github.com/user-attachments/assets/c6d4e275-05fd-4d64-b043-cf6501fe88bd)
+
+### Average Sales Per Product
+
+
+### Total Revenue By Region
+
