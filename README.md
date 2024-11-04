@@ -13,8 +13,9 @@ To calculate average sales per product and total revenue by region.
 
 ### FORMULAR USED
 ---
-
+```
 Average Sales = Total Sales / Units Sold
+```
 
 ### TOOLS AND METHOD USED
 ---
