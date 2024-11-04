@@ -39,3 +39,46 @@ Average Sales = Total Sales / Units Sold
 ### Total Revenue By Region
 
 ![Screenshot 2024-11-04 084317](https://github.com/user-attachments/assets/d512d431-3684-4619-b32d-b9e312dde604)
+
+
+
+### STRUCTURED QUERY LANGAUGE
+### Objectives
+The objectives were to: 
+•	retrieve the total sales for each product category. 
+•	find the number of sales transactions in each region. 
+•	find the highest-selling product by total sales value. 
+•	calculate total revenue per product. 
+•	calculate monthly sales totals for the current year. 
+•	find the top 5 customers by total purchase amount. 
+•	calculate the percentage of total sales contributed by each region. 
+•	identify products with no sales in the last quarter. 
+Skills:
+The set of skills were used for the optimization of the analysis, which were:
+Create of database (new schema)
+Create a table based on the field name,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
