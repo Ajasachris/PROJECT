@@ -8,8 +8,8 @@ Retail stores operate in a competitive and dynamic environment, where sales perf
  ### PROJECT OBJECTIVE
 ---
 This project was designed to address the following analysis goals.
-To perform initial exploration of Sales Data and use pivot tables to summarize total sales by product, region and month.
-To calculate average sales per product and total revenue by region.
+-To perform initial exploration of Sales Data and use pivot tables to summarize total sales by product, region and month.
+-To calculate average sales per product and total revenue by region.
 
 ### FORMULAR USED
 ---
