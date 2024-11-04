@@ -45,18 +45,84 @@ Average Sales = Total Sales / Units Sold
 ### STRUCTURED QUERY LANGAUGE
 ### Objectives
 The objectives were to: 
-•	retrieve the total sales for each product category. 
-•	find the number of sales transactions in each region. 
-•	find the highest-selling product by total sales value. 
-•	calculate total revenue per product. 
-•	calculate monthly sales totals for the current year. 
-•	find the top 5 customers by total purchase amount. 
-•	calculate the percentage of total sales contributed by each region. 
-•	identify products with no sales in the last quarter. 
-Skills:
+- retrieve the total sales for each product category. 
+- find the number of sales transactions in each region. 
+-	find the highest-selling product by total sales value. 
+-	calculate total revenue per product. 
+- calculate monthly sales totals for the current year. 
+-	find the top 5 customers by total purchase amount. 
+-	calculate the percentage of total sales contributed by each region. 
+-	identify products with no sales in the last quarter. 
+
+### Skills:
 The set of skills were used for the optimization of the analysis, which were:
 Create of database (new schema)
-Create a table based on the field name,
+Create a table based on the field name.
+
+### To retrieve the total sales for each product category.
+```
+SELECT Product, SUM(Sales) AS TotalSales
+FROM [dbo].[SalesData]
+GROUP BY Product;
+```
+
+### To find the number of sales transactions in each region.
+```
+SELECT Region, COUNT(Sales) AS number_of_sales
+FROM [dbo].[SalesData]
+GROUP BY Region
+ORDER BY number_of_sales
+```
+### To find the highest-selling product by total sales value.
+```
+SELECT Product, SUM(Sales) AS Total_sales_value
+FROM [dbo].[SalesData]
+GROUP BY Product 
+ORDER BY Total_sales_value DESC;
+```
+### To calculate total revenue per product.
+```
+SELECT Product, SUM(CAST(Quantity AS INT) * CAST(UnitPrice AS DECIMAL(18,2))) AS Revenue
+FROM [dbo].[SalesData]
+GROUP BY Product
+ORDER BY Revenue DESC;
+```
+### To calculate monthly sales totals for the current year.
+```
+SELECT 
+    MONTH(OrderDate) AS Month, 
+    SUM(Sales) AS Monthly_Sales
+FROM [dbo].[SalesData]
+WHERE YEAR(OrderDate) = YEAR(GETDATE())  -- Filter for the current year
+GROUP BY MONTH(OrderDate)
+ORDER BY Month;
+```
+### To find the top 5 customers by total purchase amount.
+```
+SELECT TOP 5 Customer_Id, SUM(Sales) AS Total_purchase_amount
+FROM [dbo].[SalesData]
+GROUP BY Customer_Id
+ORDER BY Total_purchase_amount DESC;
+```
+### To calculate the percentage of total sales contributed by each region.
+```
+SELECT SUM(Sales) AS Total_Sales
+    FROM [dbo].[SalesData]
+)
+SELECT Region, 
+       (SUM(Sales) / (SELECT Total_Sales FROM TotalSales)) * 100 AS Sales_percentage
+FROM [dbo].[SalesData]
+GROUP BY Region
+ORDER BY Sales_percentage DESC;
+```
+### To identify products with no sales in the last quarter.
+```
+SELECT Product, DATEPART(QUARTER, OrderDate) AS Quarter
+FROM  [dbo].[SalesData] 
+WHERE DATEPART(QUARTER, OrderDate) = DATEPART(QUARTER, GETDATE()) - 1
+  AND YEAR(OrderDate) = YEAR(GETDATE())
+ORDER BY DATEPART(QUARTER, OrderDate);
+```
 
 
 
