@@ -43,7 +43,7 @@ Average Sales = Total Sales / Units Sold
 
 
 ### STRUCTURED QUERY LANGAUGE
-### Objectives
+### Project Objectives
 The objectives were to: 
 - retrieve the total sales for each product category. 
 - find the number of sales transactions in each region. 
@@ -123,6 +123,13 @@ WHERE DATEPART(QUARTER, OrderDate) = DATEPART(QUARTER, GETDATE()) - 1
   AND YEAR(OrderDate) = YEAR(GETDATE())
 ORDER BY DATEPART(QUARTER, OrderDate);
 ```
+
+### POWER BI
+### PROJECT OBJECTIVE
+The objective is to create a dashboard that visualizes the insights in Excel, SQL.
+The dashboard should include a Sales Overview and top-performing products and regional breakdowns.
+
+
 
 
 
