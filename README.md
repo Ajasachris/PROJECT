@@ -125,14 +125,12 @@ ORDER BY DATEPART(QUARTER, OrderDate);
 ```
 
 ### POWER BI
+
 ### PROJECT OBJECTIVE
 The objective is to create a dashboard that visualizes the insights in Excel, SQL.
 The dashboard should include a Sales Overview and top-performing products and regional breakdowns.
 
-
-
-
-
+![Screenshot 2024-11-04 220727](https://github.com/user-attachments/assets/e8bcb621-3642-4eb3-bf8a-7e2854ddfc0f)
 
 
 
