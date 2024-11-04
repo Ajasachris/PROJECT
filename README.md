@@ -32,6 +32,8 @@ Average Sales = Total Sales / Units Sold
 
 ### Average Sales Per Product
 
+![Screenshot 2024-11-04 083629](https://github.com/user-attachments/assets/8e4adce3-4752-4dd7-9f52-454785de6092)
 
 ### Total Revenue By Region
 
+![Screenshot 2024-11-04 084317](https://github.com/user-attachments/assets/d512d431-3684-4619-b32d-b9e312dde604)
