@@ -1,4 +1,4 @@
-### SALES PERFORMANCE ANALYSIS 
+# SALES PERFORMANCE ANALYSIS 
 
 ### PROJECT OVERVIEW
 
@@ -42,7 +42,8 @@ Average Sales = Total Sales / Units Sold
 
 
 
-### STRUCTURED QUERY LANGAUGE
+# STRUCTURED QUERY LANGAUGE
+
 ### Project Objectives
 The objectives were to: 
 - retrieve the total sales for each product category. 
@@ -124,7 +125,7 @@ WHERE DATEPART(QUARTER, OrderDate) = DATEPART(QUARTER, GETDATE()) - 1
 ORDER BY DATEPART(QUARTER, OrderDate);
 ```
 
-### POWER BI
+# POWER BI
 
 ### PROJECT OBJECTIVE
 The objective is to create a dashboard that visualizes the insights in Excel, SQL.
