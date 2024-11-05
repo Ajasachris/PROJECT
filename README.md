@@ -56,8 +56,8 @@ The objectives were to:
 
 ### Skills:
 The set of skills were used for the optimization of the analysis, which were:
-Create of database (new schema)
-Create a table based on the field name.
+- Create of database (new schema)
+- Create a table based on the field name.
 
 ### To retrieve the total sales for each product category.
 ```
